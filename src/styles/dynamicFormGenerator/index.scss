@@ -1,0 +1,62 @@
+.df-generator {
+    &-wrapper {
+        color: app-color('black');
+        height: max-content;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: left;
+    }
+
+    &-form {
+        &-container {
+            background: app-color('white');
+            padding: 5px;
+            margin-bottom: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+            min-height: 50px;
+        }
+        &-add {
+            font-size: 30px;
+            font-weight: bold;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            border: 0.5px rgba(0, 0, 0, 0.2) solid;
+            position: relative;
+            span {
+                display: table;
+                vertical-align: middle;
+                text-align: center;
+                line-height: 18px !important;
+                width: 18px !important;
+                padding-bottom: 5px;
+            }
+            &:hover {
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+                cursor: pointer;
+            }
+            &:active {
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+                transform: translateY(2px);
+              }
+            &-container {
+                margin-top: 10px;
+                margin-right: 10px;
+                height: 30px;
+            }
+        }
+        &-question {
+            &-container {
+                margin: 5px 10px;
+                border-radius: 8px;
+                background-color: app-color('extra-light-blue');
+                padding: 10px;
+            }
+        }
+    }
+}

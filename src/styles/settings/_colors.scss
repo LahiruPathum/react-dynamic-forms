@@ -1,0 +1,30 @@
+$colors: (
+    'black': #000,
+    'dark-grey': #231F20,
+    'mid-grey': #5B5B5B,
+    'light-grey': #A3A3A3,
+    'extra-light-grey': #EFEFEE,
+    'white': #FFFFFF,
+    'yellow': #F9F07B,
+    'green': #60AB55,
+    'light-green': #9FCC99,
+    'pink': #F13CA7,
+    'light-pink': #F89BD2,
+    'purple': #79427C,
+    'light-purple': #C291C5,
+    'mint': #80D5BC,
+    'orange': #F56942,
+    'light-orange': #FF9475,
+    'red': #EF4050,
+    'light-red': #F58993,
+    'blue': #25408F,
+    'light-blue': #9AADE5,
+    'extra-light-blue': #daf2f1,
+) !default;
+
+@function app-color($name: 'blue') {
+    @if map-get($colors, $name) == null {
+      @error '"#{$name}" is not an available colour';
+    }
+    @return map-get($colors, $name);
+}
